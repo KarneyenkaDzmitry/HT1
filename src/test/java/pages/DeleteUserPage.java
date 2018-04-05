@@ -11,10 +11,8 @@ public class DeleteUserPage extends JenkinsPages {
 
     private final String DELETE_USER_PAGE_URI;
 
-    private Button confirmationButton = new Button(driver, By.id("yui-gen4-button"));
-    //<button type="button" tabindex="0" id="yui-gen4-button">Yes</button>
-    //<button type="button" tabindex="0" id="yui-gen1-button">Yes</button>
-    //<button type="button" tabindex="0" id="yui-gen6-button">Yes</button>
+    private Button confirmationButton = new Button(driver, By.xpath("//span[@name='Submit']/span/button[@type='button']"));
+
     @FindBy(name = "delete")
     private WebElement confirmationText;
 

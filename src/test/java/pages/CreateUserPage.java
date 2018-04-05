@@ -31,10 +31,10 @@ public class CreateUserPage extends JenkinsPages {
     @FindBy(name = "email")
     private WebElement email;
 
-    @FindBy(className = "error")//<div class="error" style="margin-bottom:1em">
+    @FindBy(className = "error")
     private WebElement errorMessage;
 
-    private Button createButton = new Button(driver, By.id("yui-gen4-button"));
+    private Button createButton = new Button(driver, By.xpath("//span[@name='Submit']/span/button[@type='button']"));
 
     public CreateUserPage(WebDriver driver) {
         super(driver);
